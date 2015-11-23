@@ -1,0 +1,14 @@
+DROP TABLE IF EXISTS test;
+CREATE TABLE test(
+col1 String,
+col2 String,
+Col3 String,
+)
+PARTITIONED BY (col1 STRING)
+CLUSTERED BY (col3) into 5 buckets
+STORED AS ORC;
+
+
+
+
+#Make sure  You Have Location Defined as yours
